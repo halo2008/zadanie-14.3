@@ -73,13 +73,13 @@ $ (function(){
 		carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
 	}
   
-	//setInterval(changeSlide, 4000);
+	setInterval(changeSlide, 4000);
   
 	function moveFirstSlide() {
 		var firstItem = carouselList.find("li:first");
 		var lastItem = carouselList.find("li:last");
 		lastItem.after(firstItem);
-		carouselList.animate({'marginLeft': 800}, 500);
+		carouselList.animate({'marginLeft': +400}, 500);
 		
 	}
   
