@@ -1,4 +1,6 @@
-.button {	
+.button {
+	top: 180px;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	font-size: 48px;
@@ -7,10 +9,36 @@
 #carousel {	
 	margin: 0 auto;	
 	width: 2000px;	
-	overflow: hidden;  
+	overflow: hidden;   
 }
 
-ul li {
+#prev, #next {	
+	width: 30px;
+	height: 55px;
+	background-color: #000;
+	color: #fff;
+}
+#next {
+	margin-left: 1540px;
+}
+
+
+
+.dot {
+	margin: 0 auto;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #000;
+	&:hover{
+		cursor: pointer;
+		background-color: #fff;
+	}	
+}
+
+
+ul li {	
 	display: inline-block;
 	float: left;
 	list-style-type: none;

@@ -1,25 +1,15 @@
-.button {
-  display: flex;
-  justify-content: space-between;
-  font-size: 48px;
-}
+.button { top: 180px; position: absolute; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; font-size: 48px; }
 
-#carousel {
-  margin: 0 auto;
-  width: 2000px;
-  overflow: hidden;
-}
+#carousel { margin: 0 auto; width: 2000px; overflow: hidden; }
 
-ul li {
-  display: inline-block;
-  float: left;
-  list-style-type: none;
-}
+#prev, #next { width: 30px; height: 55px; background-color: #000; color: #fff; }
 
-#carousel ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0px;
-}
+#next { margin-left: 1540px; }
 
-/*# sourceMappingURL=style.css.map */
+.dot { margin: 0 auto; display: inline-block; width: 20px; height: 20px; border-radius: 50%; background-color: #000; }
+
+.dot:hover { cursor: pointer; background-color: #fff; }
+
+ul li { display: inline-block; float: left; list-style-type: none; }
+
+#carousel ul { list-style-type: none; margin: 0 auto; padding: 0px; }
